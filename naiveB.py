@@ -29,9 +29,6 @@ class nb:
 
         return sqrt(variance)
 
-
-
-
     def meanOfVector(self,rows):
 
         meann=[]
@@ -81,6 +78,5 @@ obj=nb(dataset)
 sp=obj.separate()
 fm=obj.finalMean(sp)
 cp=obj.conditionalProbability(fm,dataset[5])
-
 print(cp)
 
