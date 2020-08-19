@@ -14,7 +14,7 @@ Bayes theorem is given by:
         P(B): Evidence.
         
           Say A: Class
-              B:Values
+              B:Data points
 
 
 1)First separate dataset according to classes.
