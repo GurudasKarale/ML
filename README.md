@@ -1,4 +1,4 @@
-# naive_bayes
+# Naive_bayes
 
 Bayes theorem is one of the most important theorem in probability to calculate conditional probabilities. So, how exactly can we  apply it in machine learning. Well, to calculate the probability of data that ,it belongs to particular class. This theorem can be used in binary classification problem like spam detection etc.
 Bayes theorem is given by:
