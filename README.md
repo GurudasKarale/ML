@@ -84,3 +84,14 @@ e.g 5 datapoints belong to class 0 and 5 datapoints belong to class 1 then, P(cl
         gini index=1- summation{(p(x=k))^2}
         info gain=previous impurity- current impurity
 
+# K Nearest Neighbour
+
+1)Find eucledian distance between the datapoint to be classified and all the datapoints in the dataset.
+
+2)Let n be the number of nearest neighbours to be found out.
+
+3)sort datapoints in dataset in non-decreasing order of their distances.
+
+4)Select first n sorted datapoints, and keep track of its labels count.
+
+5)Datapoint to be classified belongs is nearest to the label which occurs the most.
