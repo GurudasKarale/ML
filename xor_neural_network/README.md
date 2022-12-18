@@ -2,7 +2,7 @@
 
 
 
-In machine learning ,everything comes down to probability , statistics  and linear algebra. What you get at the output of the fully connected network are the conditional probabilities!
+In machine learning ,everything comes down to probability , statistics  and linear algebra. What you get at the output of the fully connected network are the conditional probabilities.
 To understand the rudiments of neural network i.e the mathematics behind it , we will solve the basic XOR problem. 
 So, to decide the architecture of fully connected net. there is no rule of thumb, we have to decide it on the basis of trial  and error method. For this problem we will  be using 2-2-1 architecture i.e 2 neurons in the input layer, 2 in the hidden layer and since there are two classes(1,0),one neuron in the output layer.
 
