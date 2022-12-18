@@ -14,7 +14,7 @@ It is just the linear combination of input variables!
            Wji(1):input weights which are going to be updated once we apply learning algorithm to it.
             
            Wj0(1): biases, triggering of the neuron depends on their value.
-__Total number of parameters that are to be calculated are 9,i.e 4 weights and 2 biases in the input layer and 2 weights and 1 bias in the output layer.__
+__Total number of parameters that are required to be calculated are 9,i.e 4 weights and 2 biases in the input layer and 2 weights and 1 bias in the output layer.__
 
 Truth table of xor:
 
