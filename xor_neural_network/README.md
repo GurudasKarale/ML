@@ -2,7 +2,7 @@
 
 
 
-In machine learning ,everything comes down to probability , statistics  and linear algebra. What you get at the output of the fully connected network are the conditional probabilities.
+In machine learning ,everything comes down to probability , statistics  and linear algebra. What you get at the output of the fully connected network are nothing but the conditional probabilities.
 To understand the rudiments of neural network i.e the mathematics behind it , we will solve the basic XOR problem. 
 So, to decide the architecture of fully connected net. there is no rule of thumb, we have to decide it on the basis of trial  and error method. For this problem we will  be using 2-2-1 architecture i.e 2 neurons in the input layer, 2 in the hidden layer and since there are two classes(1,0),one neuron in the output layer.
 
@@ -32,7 +32,7 @@ __classes__=[0,1]
 
 __labels__=[0,1,1,0]
 
-Now that, we have calculated the linear combinations of input variables and added bias to it , it is the time to pass it through activation function to introduce the __non linearity__. Here we are using __sigmoid__ as the activation function.
+Now that we have calculated the linear combinations of input variables and added bias to it , it is time to pass it through activation function to introduce the __non linearity__. Here we are using __sigmoid__ as the activation function.
 
 ![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/sigmoid.JPG)
 
@@ -44,7 +44,7 @@ Similarly, we will multiply the output of hidden layer  with output weights and 
 
 __Backpropagation__:
 
-Its time to learn the most important part of network i.e backprop! and it is nothing but taking the derivative of error and propagating it back right to the input layer using CHAIN RULE!
+Its time to move to the most important part of the network i.e backprop! and it is carried out by taking the derivative of error and propagating it back right to the input layer using CHAIN RULE!
 
 In first iteration, we will get some values at the output corresponding to each input , which for now are trash.
 
@@ -91,7 +91,7 @@ Finally, the gradient of error with respect to weights is given by:
 ![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/den.JPG)
  
  
-5) We are almost done, only thing remaining is to apply the technique to update the weights, and here we are using gradient descent ,although there are other techniques also available like rmsprop, adamGD etc.
+5) We are almost done, only thing remaining is to apply the technique to update the weights, and here we are using gradient descent ,although there are other multiple other techniques also available like rmsprop, adamGD etc to do the same.
 
 ![Image of gradient](https://github.com/MohitK22/xor_neural_network/blob/master/img/gradient.JPG)
  
