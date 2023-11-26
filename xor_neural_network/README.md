@@ -18,7 +18,7 @@ __Total number of parameters that are required to be calculated are 9,i.e 4 weig
 
 Truth table of xor:
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/xor.png)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/xor.png)
  
 __Input weight matrix size__: 2x2
 
@@ -34,11 +34,11 @@ __labels__=[0,1,1,0]
 
 Now that we have calculated the linear combinations of input variables and added bias to it , it is time to pass it through activation function to introduce the __non linearity__. Here we are using __sigmoid__ as the activation function.
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/sigmoid.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/sigmoid.JPG)
 
 Thus, it is denoted by z, and are the hidden layer values.
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/z.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/z.JPG)
  
 Similarly, we will multiply the output of hidden layer  with output weights and add bias to it, which is going to be output of last layer.  
 
@@ -52,11 +52,11 @@ Just like we did the feed forward , now is the time to move backwards, but in th
 
 1)Firstly, we will calculate the error and it is given by: 
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/error.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/error.JPG)
 
 gradient of the error w.r.t to weights is given  by
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/errorgradient.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/errorgradient.JPG)
  
 2)derivative of activation function is given by:
 
@@ -70,36 +70,35 @@ __deltaK=(expected output-actual output)*derivative(actual output)__
 
 4)__deltaK is propagated backwards using chain rule.__
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/chain.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/chain.JPG)
  
 the above equation shows that, error depends on weights only via the summed input to Jth unit.
 
 where
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/daj.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/daj.JPG)
   
 and
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/chain1.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/chain1.JPG)
  
 i.e
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/deltaJ.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/deltaJ.JPG)
  
 Finally, the gradient of error with respect to weights is given by:
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/den.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/den.JPG)
  
  
 5) We are almost done, only thing remaining is to apply the technique to update the weights, and here we are using gradient descent ,although there are other multiple other techniques also available like rmsprop, adamGD etc to do the same.
 
-![Image of gradient](https://github.com/MohitK22/xor_neural_network/blob/master/img/gradient.JPG)
+![Image of gradient](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/gradient.JPG)
  
 where __η > 0__ is the learning parameter.
 
 __At each step the weight vector is moved in the direction of the greatest rate of decrease of the error function, and so this approach is known as gradient descent or steepest descent.__
 
-Reference:
-
+#Reference:
 Christopher Bishop,Pattern Recognition and Machine Learning(2006).
 
