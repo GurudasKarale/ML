@@ -9,7 +9,7 @@ So, to decide the architecture of fully connected net. there is no rule of thumb
 Feed-Forward function:
 It is just the linear combination of input variables!
 
-![Image of feed](https://github.com/MohitK22/xor_neural_network/blob/master/img/feed.JPG)
+![Image of feed](https://github.com/GurudasKarale/ML/blob/master/xor_neural_network/img/feed.JPG)
        
            Wji(1):input weights which are going to be updated once we apply learning algorithm to it.
             
