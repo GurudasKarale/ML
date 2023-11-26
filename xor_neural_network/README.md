@@ -100,5 +100,5 @@ where __η > 0__ is the learning parameter.
 __At each step the weight vector is moved in the direction of the greatest rate of decrease of the error function, and so this approach is known as gradient descent or steepest descent.__
 
 #Reference:
-Christopher Bishop,Pattern Recognition and Machine Learning(2006).
+Christopher Bishop,Pattern Recognition and Machine Learning(2006).  
 
